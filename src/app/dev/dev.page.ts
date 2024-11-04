@@ -15,6 +15,7 @@ export class DevPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    empty:String;
   }
 
 }

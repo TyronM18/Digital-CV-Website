@@ -1,21 +1,67 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
+      <ion-title size="large">About Me</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <!-- Personal Information -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Tyron Moodley</ion-card-title>
+        <ion-card-subtitle>Junior JavaScript/Blockchain Developer</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          I am a dedicated ICT Application Development graduate with a strong foundation in programming languages and
+          web development. With hands-on experience in application design, coding, testing, and deployment, I excel in
+          collaborating with cross-functional teams to deliver high-quality solutions.
+        </p>
+        <p>
+          Skills include JavaScript, Python, SQL, C#, React, Angular, AWS, and cybersecurity, among others. I'm
+          proactive, adaptable, and committed to staying updated with emerging technologies.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Qualification and Certifications -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Qualifications & Certifications</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          My latest qualification is in ICT Application Development(Advanced Diploma), accompanied by certifications in programming and
+          web development. I am committed to advancing my knowledge and skill set to keep up with industry standards.
+        </p>
+        <p>
+          Additionally, I have been accepted into a Postgraduate Diploma in Industrial Engineering with a focus on Data
+          Science at the University of Stellenbosch, which I will be completing part-time(2025).
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Job Experience -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Job Experience</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          Currently, I work as a Junior JavaScript/Blockchain Developer at Centbee. In this role, I am responsible for
+          designing and managing multiple pages on the Centbee website, building and maintaining the employee dashboard,
+          implementing features aligned with user needs, and collaborating on blockchain-related projects.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Download CV Button -->
+    <ion-button expand="block" href="assets/TyronWayneMoodley_Curriculum_Vitae.pdf" download="Tyron_Moodley_CV">
+      Download My CV
+    </ion-button>
   </div>
 </ion-content>

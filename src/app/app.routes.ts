@@ -11,4 +11,12 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./folder/folder.page').then((m) => m.FolderPage),
   },
+  {
+    path: 'dev',
+    loadComponent: () => import('./dev/dev.page').then( m => m.DevPage)
+  },
+  {
+    path: 'prints',
+    loadComponent: () => import('./prints/prints.page').then( m => m.PrintsPage)
+  },
 ];

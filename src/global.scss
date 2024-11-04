@@ -35,3 +35,23 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+/* Global Styles */
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    --ion-color-primary: #3880ff;
+    /* Primary color */
+    --ion-color-secondary: #00dc82;
+    /* Secondary color */
+    --ion-color-tertiary: #ff5555;
+    /* Tertiary color */
+    --ion-color-dark: #222428;
+    --ion-color-light: #f4f5f8;
+}
+
+/* Customize Ionic's default styles as needed */
+ion-content {
+    --background: #f0f2f5;
+    /* Light background */
+}

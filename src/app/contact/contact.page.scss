@@ -1,0 +1,78 @@
+/* Contact Form Styles */
+form {
+  width: 90%; /* Ensure the form is responsive */
+  max-width: 100%; /* Set a maximum width for the form */
+  margin: 20px auto; /* Center the form on the page */
+  background-color: #0f3932; /* Match the background color */
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 8px; /* Match the card styling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+ion-item {
+  --background: transparent; /* Make items transparent to match the background */
+}
+
+ion-label {
+  color: #ffffff !important; /* Force label color */
+  font-weight: bold !important;
+  padding-bottom: 20px !important;
+  font-size: 1.5rem !important;
+  font-family: "Roboto", sans-serif !important; /* Force font family */
+}
+
+ion-input,
+ion-textarea {
+  background-color: #f4f5f8;
+  color: #000;
+  border-radius: 5px;
+  --ion-item-background: transparent;
+}
+
+ion-input:focus,
+ion-textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 220, 130, 0.8);
+}
+
+ion-button {
+  margin-top: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: background-color 0.3s, transform 0.2s;
+}
+ion-button:hover {
+  background-color: #09211d;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.feedback-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-container.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.feedback-container.danger {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.feedback-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.feedback-text {
+  font-size: 16px;
+  font-weight: bold;
+}

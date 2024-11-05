@@ -1,7 +1,15 @@
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  --background: var(
+    --ion-item-background,
+    var(--ion-background-color, #ffffff)
+  );
 }
-
+.menu-toggle-button {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+}
 ion-menu.md ion-content {
   --padding-start: 8px;
   --padding-end: 8px;
@@ -23,7 +31,7 @@ ion-menu.md ion-note {
 }
 
 ion-menu.md ion-list#inbox-list {
-  border-bottom: 1px solid var(--ion-background-color-step-150, #d7d8da);
+  border-bottom: 3px solid var(--ion-color-step-150, #032912);
 }
 
 ion-menu.md ion-list#inbox-list ion-list-header {
@@ -51,6 +59,18 @@ ion-menu.md ion-item {
 
 ion-menu.md ion-item.selected {
   --background: rgba(var(--ion-color-primary-rgb), 0.14);
+}
+
+ion-menu ion-item:hover {
+  background: gray;
+}
+
+ion-menu ion-item:hover::before {
+  background: rgb(49, 54, 56);
+}
+
+ion-menu ion-item:hover::after {
+  background: gray;
 }
 
 ion-menu.md ion-item.selected ion-icon {
@@ -114,6 +134,70 @@ ion-note {
   color: var(--ion-color-medium-shade);
 }
 
-ion-item.selected {
-  --color: var(--ion-color-primary);
+.ion-item:hover {
+  background-color: #3700eb;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px outset var(--ion-color-step-150, #032912);
+}
+
+.social-links {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+/* Base font size for icons */
+.social-links ion-icon {
+  font-size: 1.5rem; /* Default icon size */
+}
+
+/* Hover effects */
+.social-links a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover ion-icon {
+  color: #0073e6;
+  transform: scale(1.2);
+}
+
+.social-links a:hover ion-label {
+  color: #0073e6;
+}
+
+/* Responsive Font Sizes */
+@media (min-width: 768px) {
+  /* Tablet and larger */
+  .social-links ion-icon {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 512px) {
+  /* Tablet and larger */
+  .social-links ion-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop and larger */
+  .social-links ion-icon {
+    font-size: 3rem;
+  }
 }

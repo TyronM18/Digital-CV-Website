@@ -1,8 +1,47 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet } from '@ionic/angular/standalone';
-import { mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp, construct } from 'ionicons/icons';
+import { Platform } from '@ionic/angular';
+import {
+  IonButton,
+  IonApp,
+  IonSplitPane,
+  IonMenu,
+  IonContent,
+  IonList,
+  IonListHeader,
+  IonNote,
+  IonMenuToggle,
+  IonItem,
+  IonIcon,
+  IonLabel,
+  IonMenuButton,
+  IonRouterOutlet,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonButtons,
+} from '@ionic/angular/standalone';
+import {
+  mailOutline,
+  mailSharp,
+  paperPlaneOutline,
+  paperPlaneSharp,
+  heartOutline,
+  heartSharp,
+  archiveOutline,
+  archiveSharp,
+  trashOutline,
+  trashSharp,
+  warningOutline,
+  warningSharp,
+  bookmarkOutline,
+  bookmarkSharp,
+  construct,
+  logoInstagram,
+  logoLinkedin,
+  logoGithub,
+} from 'ionicons/icons';
 import { addIcons } from 'ionicons';
 
 @Component({
@@ -11,35 +50,63 @@ import { addIcons } from 'ionicons';
   styleUrls: ['app.component.scss'],
   standalone: true,
   imports: [
-    RouterLink, RouterLinkActive, CommonModule, IonApp, IonSplitPane, IonMenu, IonContent,
-    IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet,
+    RouterLink,
+    IonButton,
+    RouterLinkActive,
+    CommonModule,
+    IonApp,
+    IonSplitPane,
+    IonMenu,
+    IonContent,
+    IonList,
+    IonListHeader,
+    IonMenuButton,
+    IonNote,
+    IonMenuToggle,
+    IonItem,
+    IonIcon,
+    IonLabel,
+    IonRouterOutlet,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonButtons,
   ],
 })
 export class AppComponent {
+  isMobile: boolean;
   public appPages = [
-    { title: 'Home', url: '/folder/inbox', icon: 'mail' },
+    { title: 'About me', url: '/folder/inbox', icon: 'bookmark' },
     { title: 'Development', url: '/dev', icon: 'construct' },
     { title: '3D Design and Printing', url: '/prints', icon: 'paper-plane' },
+    { title: 'Contact', url: '/contact', icon: 'mail' },
   ];
 
-  constructor() {
+  constructor(private platform: Platform) {
     addIcons({
-      'mail-outline': mailOutline,
-      'mail-sharp': mailSharp,
-      'paper-plane-outline': paperPlaneOutline,
-      'paper-plane-sharp': paperPlaneSharp,
-      'heart-outline': heartOutline,
-      'heart-sharp': heartSharp,
-      'archive-outline': archiveOutline,
-      'archive-sharp': archiveSharp,
-      'trash-outline': trashOutline,
-      'trash-sharp': trashSharp,
-      'warning-outline': warningOutline,
-      'warning-sharp': warningSharp,
-      'bookmark-outline': bookmarkOutline,
-      'bookmark-sharp': bookmarkSharp,
-      'construct-outline': construct,
-      'construct-sharp': construct,
+      logoInstagram,
+      logoLinkedin,
+      logoGithub,
+      mailOutline: mailOutline,
+      mailSharp: mailSharp,
+      paperPlaneOutline: paperPlaneOutline,
+      paperPlaneSharp: paperPlaneSharp,
+      heartOutline: heartOutline,
+      heartSharp: heartSharp,
+      archiveOutline: archiveOutline,
+      archiveSharp: archiveSharp,
+      trashOutline: trashOutline,
+      trashSharp: trashSharp,
+      warningOutline: warningOutline,
+      warningSharp: warningSharp,
+      bookmarkOutline: bookmarkOutline,
+      bookmarkSharp: bookmarkSharp,
+      constructOutline: construct,
+      constructSharp: construct,
+    });
+    this.isMobile = this.platform.width() < 600;
+    this.platform.resize.subscribe(() => {
+      this.isMobile = this.platform.width() < 600;
     });
   }
 }

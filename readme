@@ -43,24 +43,24 @@ This will start a local development server and open the app in your default web 
 
 Responsive side menu for both mobile and desktop
 
-![Home Page](assets/Responsive.jpg)
+![Home Page](./assets/Responsive.jpg)
 
 Home Page
 
-![Home Page](assets/Home-page.jpg)
+![Home Page](./assets/Home-page.jpg)
 
 Development Page
 
-![Dev Page](assets/Dev-page.jpg)
+![Dev Page](./assets/Dev-page.jpg)
 
 Video embedding with responsive design using Google Youtube Api
 
-![Youtube Api and iframe Page](assets/youtube.jpg)
+![Youtube Api and iframe Page](./assets/youtube.jpg)
 
 Prints Page
 
-![Prints Page](assets/Prints-page.jpg)
+![Prints Page](./assets/Prints-page.jpg)
 
 Contact Page
 
-![Home Page](assets/Contact-form.jpg)
+![Home Page](./assets/Contact-form.jpg)

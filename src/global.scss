@@ -1,0 +1,102 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+/* Global Styles */
+html,
+body {
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  --ion-color-primary: #06612b;
+  /* Primary color */
+  --ion-color-secondary: #00dc82;
+  /* Secondary color */
+  --ion-color-tertiary: #ff5555;
+  /* Tertiary color */
+  --ion-color-dark: #222428;
+  --ion-color-light: #f4f5f8;
+}
+
+/* Customize Ionic's default styles as needed */
+
+ion-content {
+  --background: #061714;
+}
+
+ion-card-header {
+  font-size: medium;
+}
+
+ion-card-title {
+  font-size: x-large;
+}
+
+ion-card-subtitle {
+  font-size: medium;
+}
+
+ion-button {
+  font-size: small;
+}
+
+ion-col {
+  font-size: medium;
+}
+
+ion-title {
+  font-size: large;
+}
+
+ion-item {
+  font-size: medium;
+}
+
+ion-text {
+  font-weight: bold;
+}
+
+li,
+p {
+  color: #f4f5f8;
+}
+ion-card-title {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+

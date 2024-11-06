@@ -1,0 +1,209 @@
+ion-menu ion-content {
+  --background: var(
+    --ion-item-background,
+    var(--ion-background-color, #ffffff)
+  );
+}
+.menu-toggle-button {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+}
+ion-menu.md ion-content {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+}
+
+ion-menu.md ion-list {
+  padding: 20px 0;
+}
+
+ion-menu.md ion-note {
+  margin-bottom: 30px;
+}
+
+ion-menu.md ion-list-header,
+ion-menu.md ion-note {
+  padding-left: 10px;
+}
+
+ion-menu.md ion-list#inbox-list {
+  border-bottom: 3px solid var(--ion-color-step-150, #032912);
+}
+
+ion-menu.md ion-list#inbox-list ion-list-header {
+  font-size: 22px;
+  font-weight: 600;
+
+  min-height: 20px;
+}
+
+ion-menu.md ion-list#labels-list ion-list-header {
+  font-size: 16px;
+
+  margin-bottom: 18px;
+
+  color: #757575;
+
+  min-height: 26px;
+}
+
+ion-menu.md ion-item {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  border-radius: 4px;
+}
+
+ion-menu.md ion-item.selected {
+  --background: rgba(var(--ion-color-primary-rgb), 0.14);
+}
+
+ion-menu ion-item:hover {
+  background: gray;
+}
+
+ion-menu ion-item:hover::before {
+  background: rgb(49, 54, 56);
+}
+
+ion-menu ion-item:hover::after {
+  background: gray;
+}
+
+ion-menu.md ion-item.selected ion-icon {
+  color: var(--ion-color-primary);
+}
+
+ion-menu.md ion-item ion-icon {
+  color: #616e7e;
+}
+
+ion-menu.md ion-item ion-label {
+  font-weight: 500;
+}
+
+ion-menu.ios ion-content {
+  --padding-bottom: 20px;
+}
+
+ion-menu.ios ion-list {
+  padding: 20px 0 0 0;
+}
+
+ion-menu.ios ion-note {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+ion-menu.ios ion-item {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --min-height: 50px;
+}
+
+ion-menu.ios ion-item.selected ion-icon {
+  color: var(--ion-color-primary);
+}
+
+ion-menu.ios ion-item ion-icon {
+  font-size: 24px;
+  color: #73849a;
+}
+
+ion-menu.ios ion-list#labels-list ion-list-header {
+  margin-bottom: 8px;
+}
+
+ion-menu.ios ion-list-header,
+ion-menu.ios ion-note {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+ion-menu.ios ion-note {
+  margin-bottom: 8px;
+}
+
+ion-note {
+  display: inline-block;
+  font-size: 16px;
+
+  color: var(--ion-color-medium-shade);
+}
+
+.ion-item:hover {
+  background-color: #3700eb;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px outset var(--ion-color-step-150, #032912);
+}
+
+.social-links {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+/* Base font size for icons */
+.social-links ion-icon {
+  font-size: 1.5rem; /* Default icon size */
+}
+
+/* Hover effects */
+.social-links a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover ion-icon {
+  color: #0073e6;
+  transform: scale(1.2);
+}
+
+.social-links a:hover ion-label {
+  color: #0073e6;
+}
+
+ion-button:hover {
+  background-color: #09211d;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Font Sizes */
+@media (min-width: 768px) {
+  /* Tablet and larger */
+  .social-links ion-icon {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 512px) {
+  /* Tablet and larger */
+  .social-links ion-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop and larger */
+  .social-links ion-icon {
+    font-size: 3rem;
+  }
+}

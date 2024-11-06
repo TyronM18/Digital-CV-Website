@@ -1,0 +1,19 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+:root {
+    --ion-background-color: #121212;
+    /* Dark background color */
+    --ion-text-color: #ffffff;
+    /* Light text color */
+    --ion-toolbar-background: #1c1c1c;
+    /* Dark toolbar */
+    /* Add more customizations here */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ion-background-color: #121212;
+        --ion-text-color: #ffffff;
+        --ion-toolbar-background: #1c1c1c;
+    }
+}

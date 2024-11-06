@@ -1,0 +1,66 @@
+# My Ionic App
+
+This is an Ionic application built using the standalone component approach. The app includes various features such as a side menu, responsive design for mobile users, and social media links.
+
+##Built With
+Ionic - The web framework used
+Angular - The web framework used
+IonIcons - Icons used in the app
+
+## Features
+
+- Responsive side menu for both mobile and desktop
+- Profile section with a profile image and user information
+- Navigation through various pages
+- Social media links to Instagram, LinkedIn, and GitHub
+- Video embedding with responsive design using Google Youtube Api
+
+## Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/en/download/) (version 14 or later)
+- [npm](https://www.npmjs.com/get-npm) (comes with Node.js)
+
+## Getting Started
+
+##install the ionic extension in VsCode
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+
+   ```
+
+2. cd my-ionic-app
+
+3. npm install
+
+4. ionic serve
+
+This will start a local development server and open the app in your default web browser.
+
+Responsive side menu for both mobile and desktop
+
+![Home Page](assets/Responsive.jpg)
+
+Home Page
+
+![Home Page](assets/Home-page.jpg)
+
+Development Page
+
+![Dev Page](assets/Dev-page.jpg)
+
+Video embedding with responsive design using Google Youtube Api
+
+![Youtube Api and iframe Page](assets/youtube.jpg)
+
+Prints Page
+
+![Prints Page](assets/Prints-page.jpg)
+
+Contact Page
+
+![Home Page](assets/Contact-form.jpg)

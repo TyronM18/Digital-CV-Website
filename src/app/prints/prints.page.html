@@ -1,0 +1,107 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>3D Modelling And Printing</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Iframe Section -->
+  <div *ngFor="let videoUrl of videoUrls" class="video-container">
+    <iframe [src]="videoUrl" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div id="container">
+    <!-- Introduction Section -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>About My Business</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          As a full-time student and employee, I have established my side hustle
+          in 3D modeling and printing. I specialize in creating innovative
+          designs that solve real-world problems. Below are some of the products
+          I have developed:
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <!-- Challenges & Achievements Section -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Challenges & Achievements</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          Balancing my entrepreneurial journey while managing my studies and a
+          full-time job has been challenging, but it has taught me invaluable
+          time management and problem-solving skills. Through dedication and
+          creativity, I have successfully created a diverse range of products
+          that I am proud to showcase.
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <!-- Product Showcase Section -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Product Showcase</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6">
+              <ion-card>
+                <img src="/assets/air_stack.jpg" alt="Air Stack for Cars" />
+                <ion-card-header>
+                  <ion-card-title>Air Stack for Cars</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>
+                    Innovative air stack designed to improve airflow in
+                    vehicles.
+                  </p>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size="6">
+              <ion-card>
+                <img
+                  src="/assets/phone_holder.jpg"
+                  alt="Credit Card Sized Phone Holder"
+                />
+                <ion-card-header>
+                  <ion-card-title
+                    >Credit Card Sized Phone Holder</ion-card-title
+                  >
+                </ion-card-header>
+                <ion-card-content>
+                  <p>A compact phone holder that fits in your wallet.</p>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size="6">
+              <ion-card>
+                <img src="/assets/golf_tees.jpg" alt="Golf Tees" />
+                <ion-card-header>
+                  <ion-card-title>Custom Golf Tees</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>Personalized golf tees for the perfect swing.</p>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size="6">
+              <ion-card>
+                <img src="/assets/custom_signage.jpg" alt="Custom Signage" />
+                <ion-card-header>
+                  <ion-card-title>Custom Signage</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>Unique signage solutions for businesses and events.</p>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

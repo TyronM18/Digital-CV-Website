@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contact Tyron</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="sendEmail(form)" #form="ngForm">
+    <ion-item>
+      <ion-label position="stacked">Name :</ion-label>
+      <ion-textarea
+        style="height: 30px"
+        name="name"
+        ngModel
+        required
+      ></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Email :</ion-label>
+      <ion-textarea
+        style="height: 30px"
+        name="email"
+        ngModel
+        required
+      ></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Message :</ion-label>
+      <ion-textarea
+        style="height: 400px"
+        name="message"
+        ngModel
+        required
+      ></ion-textarea>
+    </ion-item>
+    <!-- Feedback Message -->
+
+    <ion-item
+      *ngIf="feedbackMessage"
+      class="feedback-container"
+      [ngClass]="feedbackMessageColor"
+    >
+      <span class="feedback-text">{{ feedbackMessage }}</span>
+    </ion-item>
+
+    <ion-button type="submit" [disabled]="isSubmitting">
+      <ion-spinner *ngIf="isSubmitting" name="dots" slot="start"></ion-spinner>
+      Send Message
+    </ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,90 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+ion-card {
+  width: 90%;
+  max-width: 100%;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.background-image-card {
+  background-image: url("/assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: left;
+}
+
+.card-header,
+.card-content {
+  margin-left: 20px;
+}
+
+/* Typewriter effect for subtitle */
+.typewriter-subtitle {
+  padding-left: 20px;
+  padding-top: 10px;
+  overflow: hidden;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  animation: typewriter 3s steps(30) 1s forwards, blink 0.5s step-end infinite;
+  width: 0;
+  color: white;
+}
+
+/* Typewriter effect for content */
+.typewriter-content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Keyframes for typewriter animation */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  margin: 0;
+}
+
+.card-content {
+  padding: 16px;
+}

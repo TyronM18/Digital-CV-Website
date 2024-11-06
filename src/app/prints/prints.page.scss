@@ -48,6 +48,12 @@ ion-card img {
 }
 
 /* Responsive adjustments */
+@media (min-width: 360px) {
+  .video-container {
+    height: 300px;
+    max-width: 100%;
+  }
+}
 @media (min-width: 430px) {
   .video-container {
     height: 300px;

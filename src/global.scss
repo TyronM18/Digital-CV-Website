@@ -38,6 +38,7 @@
 /* Global Styles */
 html,
 body {
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   --ion-color-primary: #06612b;
@@ -51,6 +52,7 @@ body {
 }
 
 /* Customize Ionic's default styles as needed */
+
 ion-content {
   --background: #061714;
 }
@@ -96,3 +98,5 @@ ion-card-title {
   font-size: 1.3em;
   font-weight: bold;
 }
+
+

@@ -16,23 +16,7 @@ import {
   IonCard,
   IonIcon,
 } from '@ionic/angular/standalone';
-import {
-  heart,
-  mailOutline,
-  mailSharp,
-  paperPlaneOutline,
-  paperPlaneSharp,
-  heartOutline,
-  heartSharp,
-  archiveOutline,
-  archiveSharp,
-  trashOutline,
-  trashSharp,
-  warningOutline,
-  warningSharp,
-  bookmarkOutline,
-  bookmarkSharp,
-} from 'ionicons/icons';
+
 import { addIcons } from 'ionicons';
 
 @Component({
@@ -60,9 +44,7 @@ export class FolderPage implements OnInit {
   public folder!: string;
   coverPlaylist: any;
   private activatedRoute = inject(ActivatedRoute);
-  constructor() {
-    addIcons({ heart });
-  }
+  constructor() {}
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id') as string;

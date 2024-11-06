@@ -22,15 +22,15 @@ ion-card {
   border: none;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Align items vertically */
-  align-items: flex-start; /* Align items to the left */
-  padding: 20px; /* Add padding for spacing */
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
   text-align: left;
 }
 
 .card-header,
 .card-content {
-  margin-left: 20px; /* Additional left margin for content */
+  margin-left: 20px;
 }
 
 /* Typewriter effect for subtitle */
@@ -47,8 +47,8 @@ ion-card {
 
 /* Typewriter effect for content */
 .typewriter-content p {
-  font-size: 20px; /* Adjust title font size */
-  font-weight: bold; /* Make title bold */
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* Keyframes for typewriter animation */
@@ -75,16 +75,16 @@ ion-card {
 }
 
 .card-title {
-  font-size: 50px; /* Adjust title font size */
-  font-weight: bold; /* Make title bold */
-  margin: 0; /* Remove default margin */
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .card-subtitle {
-  font-size: 18px; /* Adjust subtitle font size */
-  margin: 0; /* Remove default margin */
+  font-size: 18px;
+  margin: 0;
 }
 
 .card-content {
-  padding: 16px; /* Add some padding */
+  padding: 16px;
 }

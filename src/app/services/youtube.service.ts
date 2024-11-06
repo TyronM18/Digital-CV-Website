@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class YoutubeService {
-  private apiKey1 = 'AIzaSyCBos-rxWTlTvY6KQ6aTfKl_nNNwp37gLs';
+  private apiKey1 = 'Google dev platform APi key';
   private playlistId1 = 'PLWsKlBCA9Pp59IvgKIJUN4lSpGmFx336m';
 
   constructor() {}

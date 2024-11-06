@@ -1,24 +1,24 @@
 /* Contact Form Styles */
 form {
-  width: 90%; /* Ensure the form is responsive */
-  max-width: 100%; /* Set a maximum width for the form */
-  margin: 20px auto; /* Center the form on the page */
-  background-color: #0f3932; /* Match the background color */
-  padding: 20px; /* Add padding for better spacing */
-  border-radius: 8px; /* Match the card styling */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  width: 90%;
+  max-width: 100%;
+  margin: 20px auto;
+  background-color: #0f3932;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 ion-item {
-  --background: transparent; /* Make items transparent to match the background */
+  --background: transparent;
 }
 
 ion-label {
-  color: #ffffff !important; /* Force label color */
+  color: #ffffff !important;
   font-weight: bold !important;
   padding-bottom: 20px !important;
   font-size: 1.5rem !important;
-  font-family: "Roboto", sans-serif !important; /* Force font family */
+  font-family: "Roboto", sans-serif !important;
 }
 
 ion-input,
@@ -40,6 +40,8 @@ ion-button {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  background-color: #06612b;
+  border-radius: 4px;
   transition: background-color 0.3s, transform 0.2s;
 }
 ion-button:hover {

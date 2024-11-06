@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'; // Ensure HttpClientModule is imported
+import { HttpClientModule } from '@angular/common/http';
 
 import { YoutubeService } from '../services/youtube.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
@@ -58,7 +58,7 @@ export class PrintsPage implements OnInit {
         if (data && data.items) {
           this.videoUrls = data.items.map((item: any) => {
             const videoId = item.snippet.resourceId.videoId;
-            // Update the URL to include additional parameters for better control
+
             const url = `https://www.youtube.com/embed/${videoId}?enablejsapi=1&rel=0&iv_load_policy=3`;
             return this.sanitizer.bypassSecurityTrustResourceUrl(url);
           });

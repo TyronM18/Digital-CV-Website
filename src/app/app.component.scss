@@ -181,6 +181,12 @@ ion-note {
   color: #0073e6;
 }
 
+ion-button:hover {
+  background-color: #09211d;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* Responsive Font Sizes */
 @media (min-width: 768px) {
   /* Tablet and larger */

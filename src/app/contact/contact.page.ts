@@ -51,9 +51,9 @@ export class ContactPage implements OnInit {
   paymail: string = '';
   reason: string = '';
   message: string = '';
-  feedbackMessage: string = ''; // For displaying success/error message
-  feedbackMessageColor: string = ''; // 'success' or 'danger'
-  isSubmitting: boolean = false; // For disabling the button during submission
+  feedbackMessage: string = '';
+  feedbackMessageColor: string = '';
+  isSubmitting: boolean = false;
 
   constructor() {
     emailjs.init('8O2AoLJ6d1FpvqReb');
@@ -67,7 +67,7 @@ export class ContactPage implements OnInit {
     }
 
     this.isSubmitting = true;
-    this.feedbackMessage = ''; // Reset the feedback message
+    this.feedbackMessage = '';
 
     const templateParams = {
       name: form.value.name,
@@ -82,7 +82,7 @@ export class ContactPage implements OnInit {
           this.feedbackMessage =
             'Thank you for contacting us! Your email has been sent successfully.';
           this.feedbackMessageColor = 'success';
-          form.resetForm(); // Reset the form after success
+          form.resetForm();
           console.log(
             'Email sent successfully!',
             response.status,

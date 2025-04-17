@@ -19,7 +19,7 @@ import {
   IonSpinner,
 } from '@ionic/angular/standalone';
 import emailjs from 'emailjs-com';
-
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.page.html',
@@ -48,7 +48,6 @@ import emailjs from 'emailjs-com';
 export class ContactPage implements OnInit {
   name: string = '';
   email: string = '';
-  paymail: string = '';
   reason: string = '';
   message: string = '';
   feedbackMessage: string = '';
@@ -56,25 +55,36 @@ export class ContactPage implements OnInit {
   isSubmitting: boolean = false;
 
   constructor() {
-    emailjs.init('8O2AoLJ6d1FpvqReb');
+    emailjs.init(environment.EMAILJS_USER_ID);
   }
-
   sendEmail(form: any) {
-    if (form.invalid) {
-      this.feedbackMessage = 'Please fill in all fields';
+    let errors: string[] = [];
+  
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailPattern.test(form.value.email)) {
+      errors.push('Please enter a valid email address.');
+    }
+  
+
+    if (!form.value.name || !form.value.email || !form.value.message) {
+      errors.push('Please fill in all required fields.');
+    }
+
+    if (errors.length > 0) {
+      this.feedbackMessage = errors.join(' ');
       this.feedbackMessageColor = 'danger';
       return;
     }
-
+  
     this.isSubmitting = true;
     this.feedbackMessage = '';
-
+  
     const templateParams = {
       name: form.value.name,
       email: form.value.email,
       message: form.value.message,
     };
-
+  
     emailjs
       .send('service_1s9xl9g', 'template_qdzbere', templateParams)
       .then(

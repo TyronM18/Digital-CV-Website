@@ -48,9 +48,7 @@ export class PrintsPage implements OnInit {
   constructor(
     private youtubeService: YoutubeService,
     private sanitizer: DomSanitizer
-  ) {
-    console.log('YoutubeService:', this.youtubeService);
-  }
+  ) {}
   ngOnInit() {
     this.youtubeService
       .getprintsVid()

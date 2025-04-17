@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class YoutubeService {
-  private apiKey1 = 'Google dev platform APi key';
-  private playlistId1 = 'PLWsKlBCA9Pp59IvgKIJUN4lSpGmFx336m';
+  private apiKey1 = environment.YOUTUBE_API_KEY;
+  private playlistId1 = environment.YOUTUBE_PLAYLIST_ID;
 
   constructor() {}
 
